@@ -9,6 +9,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
+    <link rel="stylesheet" href="./GlobalStyle/index.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,8 +23,8 @@
                 <div class="logo">
                     <img src="./images/logo-brand.svg" alt="">
                 </div>
-                <div class="reversation">
-                    reversation
+                <div class="reservation">
+                    Reservation
                 </div>
             </div>
             <div class="header__menu">
@@ -85,25 +86,100 @@
         <!-- End Slider -->
         <div id="content"></div>
         <!-- End Content -->
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="footer-top">
+                <div class="tagname">#TheTastEat</div>
+                <div class="logo">
+                    <img src="./images/logo-brand.svg" alt="">
+                </div>
+                <ul class="social-media">
+                    <li class="social__item">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="social__item">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="social__item">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="social__item">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <div class="contact">
+                    <h3 class="title">contact</h3>
+                    <p>An Binh, Ninh Kieu, Can Tho</p>
+                    <span>+123 456 789</span>
+                    <span>thoainhpc04496@fpt.edu.vn</span>
+
+                </div>
+                <div class="subcribe">
+                    <p class="title">Join our mailing list for updates, <br>
+                        Get news & offers events.
+                    </p>
+                    <div class="action">
+                        <input type="text" maxlength="256" placeholder="Email">
+                        <button>Subcribe</button>
+                    </div>
+                </div>
+                <div class="timework">
+                    <h3 class="title">
+                        working hours
+                    </h3>
+                    <p><span>Mon - Fri:</span> 7.00am - 6.00pm</p>
+                    <p><span>Sat:</span> 7.00am - 6.00pm</p>
+                    <p><span>Sun:</span> 8.00am - 6.00pm</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <h3>
+                    © Copyright - TastEat | Designed by <span>VictorFlow</span> - Powered by <span>Webflow</span>
+                </h3>
+                <ul>
+                    <li>
+                        <a href="">
+                            Styleguide
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Styleguide
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Styleguide
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Styleguide
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- End footer -->
     </div>
     <script>
-        const wrapper = document.querySelector('.wrapper')
-        window.addEventListener('scroll', (event) => {
-            const scrollTop = window.scrollY;
-            const wrapperOffsetTop = wrapper.offsetTop
-            if (scrollTop > wrapperOffsetTop) {
-                document.body.style.backgroundColor = '#333'
-            } else {
-                document.body.style.backgroundColor = '#fff'
-            }
-        })
+        const header = document.querySelector('.header__menu')
         const navIcon = document.querySelector('.nav-icon');
         const menu = document.querySelector('#header .header__menu .menu')
         navIcon.addEventListener('click', function (event) {
             menu.classList.toggle('active-menu')
         })
+        const sticky = header.offsetTop;
+        window.onscroll = () => {
+            if (window.scrollY >= sticky) {
+                header.classList.add('sticky')
+                header.querySelector('nav').style.height = '40px'
+            } else {
+                header.classList.remove('sticky')
+                header.querySelector('nav').style.height = '80px'
+            }
+        }
     </script>
 </body>
 
