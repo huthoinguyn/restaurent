@@ -1,8 +1,125 @@
 #slider {
-  min-height: 100vh;
+  width: 100%;
+  padding-top: 40px;
+  height: fit-content;
+  background-color: var(--primary);
+  transition: all 150ms linear;
+}
+#slider .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+#slider .container .content {
+  width: 50%;
+  color: var(--white);
+  text-align: left;
+}
+#slider .container .content h2 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 10rem;
+  margin: 10px 0;
+  font-weight: 700;
+  line-height: 110px;
+}
+#slider .container .content p {
+  font-size: 2rem;
+  margin: 0 0 10px;
+  padding: 5px 0 30px;
+  font-weight: 400;
+  line-height: 30px;
+}
+#slider .container .content button {
+  padding: 18px 55px;
+  font-size: 2.2rem;
+  background-color: var(--primary);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  cursor: pointer;
+}
+#slider .container .content button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+#slider .container .image {
+  width: 50%;
+}
+#slider .container .image-wrapper {
+  background-color: #3f434a;
+  padding: 30px 30px 0 30px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+#slider .container .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 
 #content {
   min-height: 100vh;
 }
+
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  #slider .container {
+    flex-direction: column;
+  }
+  #slider .container .content,
+#slider .container .image {
+    width: 100%;
+    padding: 0 24px;
+  }
+  #slider .container .content {
+    text-align: center;
+  }
+  #slider .container .content h2 {
+    font-size: 8rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  #slider .container {
+    flex-direction: column;
+  }
+  #slider .container .content,
+#slider .container .image {
+    width: 100%;
+    padding: 0 24px;
+  }
+  #slider .container .content {
+    text-align: center;
+  }
+  #slider .container .content h2 {
+    font-size: 7rem;
+    line-height: 1.2;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  #slider .container {
+    flex-direction: column;
+  }
+  #slider .container .content,
+#slider .container .image {
+    width: 100%;
+    padding: 0 24px;
+  }
+  #slider .container .content {
+    text-align: center;
+  }
+  #slider .container .content h2 {
+    font-size: 5rem;
+    line-height: 1.2;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

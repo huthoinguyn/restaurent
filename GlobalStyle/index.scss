@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 * {
   margin: 0;
@@ -13,14 +13,18 @@
   --border: #858585;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .social-media {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   .social__item {
-    font-size: 24px;
     a {
+      font-size: 2.4rem;
       color: var(--white);
       text-decoration: none;
       padding: 0 10px;
@@ -43,7 +47,7 @@
     .phone,
     .reservation {
       padding: 18px 55px;
-      font-size: 22px;
+      font-size: 2.2rem;
       margin: 10px 0;
       text-transform: capitalize;
       cursor: pointer;
@@ -87,11 +91,12 @@
       justify-content: space-between;
       align-items: center;
       transition: height 150ms linear;
+      overflow: hidden;
       .menu {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 20px;
+        font-size: 2rem;
         list-style: none;
         transition: all 300ms linear;
         &__item {
@@ -111,7 +116,7 @@
 
       .nav-icon {
         display: none;
-        font-size: 24px;
+        font-size: 2.4rem;
         padding: 18px;
         margin: 16px;
         background-color: var(--white);
@@ -145,7 +150,7 @@
     padding-top: 100px;
     padding-bottom: 40px;
     .tagname {
-      font-size: 22px;
+      font-size: 2.2rem;
       color: var(--white);
       text-decoration: underline;
     }
@@ -157,7 +162,7 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
-      font-size: 20px;
+      font-size: 2rem;
       .title {
         width: fit-content;
         padding: 4px 0;
@@ -165,7 +170,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 1.5rem;
         line-height: 21px;
         color: var(--white);
         border-top: 1px solid var(--secondary);
@@ -184,7 +189,7 @@
     .subcribe {
       p {
         color: var(--white);
-        font-size: 20px;
+        font-size: 2rem;
         margin: 0 0 25px;
         text-align: center;
       }
@@ -201,15 +206,15 @@
           background-color: transparent;
           color: var(--white);
           outline: none;
-          font-size: 22px;
+          font-size: 2.2rem;
           &::placeholder {
-            font-size: 22px;
+            font-size: 2.2rem;
             font-weight: 500;
             color: var(--white);
           }
         }
         button {
-          font-size: 22px;
+          font-size: 2.2rem;
           font-weight: 500;
           line-height: 33px;
           padding: 9px 55px;
@@ -229,7 +234,7 @@
     padding-top: 24px;
     h3,
     ul {
-      font-size: 20px;
+      font-size: 2rem;
     }
     h3 {
       font-weight: 400;
@@ -304,7 +309,7 @@
       flex-direction: column-reverse;
       h3,
       ul {
-        font-size: 17px;
+        font-size: 1.7rem;
       }
       h3 {
         text-align: center;
@@ -446,7 +451,7 @@
   }
   #footer {
     padding-top: 70px;
-    font-size: 17px;
+    font-size: 1.7rem;
     .footer-container,
     .footer-top {
       flex-direction: column;
@@ -479,7 +484,7 @@
       gap: 12px;
       h3,
       ul {
-        font-size: 17px;
+        font-size: 1.7rem;
       }
       h3 {
         text-align: center;

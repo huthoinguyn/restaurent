@@ -82,7 +82,27 @@
             </div>
         </div>
         <!-- End header -->
-        <div id="slider"></div>
+        <div id="slider">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">
+                        Welcome to Restaurant
+                    </h2>
+                    <p class="desc">
+                        The people, food and the prime locations make the perfect place good friends & family to come
+                        together and have great time.
+                    </p>
+                    <button>
+                        View Menu
+                    </button>
+                </div>
+                <div class="image">
+                    <div class="image-wrapper">
+                        <img src="./images/slider.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- End Slider -->
         <div id="content"></div>
         <!-- End Content -->
@@ -172,12 +192,14 @@
         })
         const sticky = header.offsetTop;
         window.onscroll = () => {
-            if (window.scrollY >= sticky) {
+            if (window.scrollY > sticky) {
                 header.classList.add('sticky')
                 header.querySelector('nav').style.height = '40px'
+                document.body.style.paddingTop = '80px'
             } else {
                 header.classList.remove('sticky')
                 header.querySelector('nav').style.height = '80px'
+                document.body.style.paddingTop = 0;
             }
         }
     </script>
