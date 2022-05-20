@@ -17,6 +17,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: var(--primary);
+}
+
 .social-media {
   display: flex;
   justify-content: center;
@@ -91,7 +95,6 @@ html {
       justify-content: space-between;
       align-items: center;
       transition: height 150ms linear;
-      // overflow: hidden;
       .menu {
         display: flex;
         justify-content: center;

@@ -18,6 +18,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: var(--primary);
+}
+
 .social-media {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -14,7 +14,6 @@
     color: $background;
   }
 }
-
 #slider {
   width: 100%;
   padding-top: 40px;
@@ -75,7 +74,15 @@
 }
 
 #content {
-  min-height: 100vh;
+  // min-height: 100vh;
+}
+.parallax {
+  height: 600px;
+  background-image: url("./images/parallax.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 @media screen and (min-width: 769px) and (max-width: 990px) {
   #slider {
