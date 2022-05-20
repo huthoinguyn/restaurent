@@ -91,7 +91,7 @@ html {
       justify-content: space-between;
       align-items: center;
       transition: height 150ms linear;
-      overflow: hidden;
+      // overflow: hidden;
       .menu {
         display: flex;
         justify-content: center;
@@ -112,12 +112,16 @@ html {
             }
           }
         }
+        &.active-menu {
+          display: block;
+          height: auto;
+        }
       }
 
       .nav-icon {
         display: none;
         font-size: 2.4rem;
-        padding: 18px;
+        padding: 9px 12px;
         margin: 16px;
         background-color: var(--white);
       }
@@ -354,10 +358,6 @@ html {
             }
           }
         }
-        .active-menu {
-          display: block;
-          height: auto;
-        }
         .nav-icon {
           display: block;
         }
@@ -438,10 +438,6 @@ html {
               text-align: left;
             }
           }
-        }
-        .active-menu {
-          display: block;
-          height: auto;
         }
         .nav-icon {
           display: block;
