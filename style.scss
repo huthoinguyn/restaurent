@@ -96,6 +96,7 @@
   line-height: 30px;
   font-weight: 400;
   margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 #content {
@@ -230,6 +231,7 @@
     }
   }
   .blog {
+    padding: 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,6 +261,7 @@
             }
           }
           .blog-content {
+            margin-top: -3px;
             box-sizing: border-box;
             padding: 36px;
             width: 100%;
@@ -271,7 +274,6 @@
               }
             }
             .title {
-              max-width: 70%;
               font-size: 3rem;
               line-height: 39px;
               margin: 5px 0 20px;
@@ -356,8 +358,6 @@
     }
   }
   #content {
-    .whatweoffer {
-    }
     .popular-dishes {
       .menu-wrapper {
         .menu__list {
@@ -412,8 +412,6 @@
     }
   }
   #content {
-    .whatweoffer {
-    }
     .popular-dishes {
       .menu-wrapper {
         .menu__list {
@@ -438,6 +436,17 @@
       .service-item-wrap {
         flex-basis: 1;
         width: 90%;
+      }
+    }
+    .blog {
+      .blog-wrapper {
+        .blog-list {
+          flex-wrap: wrap;
+          .blog-item {
+            flex-basis: 1;
+            width: 90%;
+          }
+        }
       }
     }
   }
@@ -496,7 +505,7 @@
           flex-wrap: wrap;
           .blog-item {
             flex-basis: 1;
-            width: 90%;
+            width: 95%;
           }
         }
       }

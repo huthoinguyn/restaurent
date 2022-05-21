@@ -45,7 +45,7 @@ window.addEventListener("load", function () {
   const blogItem = [
     {
       img: "./images/blog-thumbnail-image-1.jpg",
-      title: "The Legend Of US Cuisine: The Story Of ",
+      title: "The Legend Of US Cuisine: The Story Of Hungry People",
       desc: "Capitalize on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality.",
     },
     {
