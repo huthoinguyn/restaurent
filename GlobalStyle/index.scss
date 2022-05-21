@@ -460,8 +460,6 @@ body {
     .footer-container {
       .action {
         flex-direction: column;
-        input {
-        }
         button {
           margin: 0 auto;
         }
@@ -492,6 +490,7 @@ body {
       ul {
         flex-direction: column;
         gap: 12px;
+        text-align: center;
       }
     }
   }
