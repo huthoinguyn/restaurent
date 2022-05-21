@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./GlobalStyle/index.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../GlobalStyle/index.css">
+    <title>About Us</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             <div class="banner">
                 <div class="phone">Call - 123 456 789</div>
                 <div class="logo">
-                    <img src="./images/logo-brand.svg" alt="" />
+                    <img src="../images/logo-brand.svg" alt="" />
                 </div>
                 <div class="reservation">Reservation</div>
             </div>
@@ -27,10 +27,10 @@
                 <nav>
                     <ul class="menu">
                         <li class="menu__item">
-                            <a href=""> Home </a>
+                            <a href="../index.html"> Home </a>
                         </li>
                         <li class="menu__item">
-                            <a href="./about/index.html"> About Us </a>
+                            <a href=""> About Us </a>
                         </li>
                         <li class="menu__item">
                             <a href=""> Our Menu </a>
@@ -65,94 +65,11 @@
                 </nav>
             </div>
         </div>
-        <!-- End header -->
-        <div id="slider">
-            <div class="container">
-                <div class="content">
-                    <h2 class="title">Welcome to Restaurant</h2>
-                    <p class="desc">
-                        The people, food and the prime locations make the perfect place
-                        good friends & family to come together and have great time.
-                    </p>
-                    <button>View Menu</button>
-                </div>
-                <div class="image">
-                    <div class="image-wrapper">
-                        <img src="./images/slider.jpg" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Slider -->
-        <div id="content">
-            <!-- <div class="menu">
-                <h3 class="category">menu</h3>
-            </div> -->
-            <!-- End menu -->
-            <!-- <div class="testimonial">
-                <h3 class="category">testimonial</h3>
-            </div> -->
-            <!-- End testimonial -->
-            <!-- <div class="offers">
-                <h3 class="category">offers</h3>
-            </div> -->
-            <div class="popular-dishes">
-                <h3 class="category">menu</h3>
-                <h2 class="title">Popular Dishes</h2>
-                <p class="desc">
-                    There is a game between the waiters in restaurant to see who serves
-                    the food to each table fastest. That led to attempting the Guinness
-                    Record.
-                </p>
-                <div class="menu-wrapper">
-                    <div class="menu__list"></div>
-                </div>
-                <button>See all dishes</button>
-            </div>
-            <div class="whatweoffer">
-                <div class="content">
-                    <h3 class="category">what we offer</h3>
-                    <h2 class="title">Our Great Services</h2>
-                    <p class="desc">
-                        The atmosphere set the stage. It’s about more than just a dining
-                        room away from your home. food takes the spotlight as guests.
-                    </p>
-                </div>
-                <div class="service-item-wrap">
-                    <img src="./images/service-icon-1.svg" alt="" />
-                    <p class="text">Opened 24/7</p>
-                </div>
-                <div class="service-item-wrap">
-                    <img src="./images/service-icon-2.svg" alt="" />
-                    <p class="text">Special Menus</p>
-                </div>
-                <div class="service-item-wrap">
-                    <img src="./images/service-icon-3.svg" alt="" />
-                    <p class="text">Home Delivery</p>
-                </div>
-            </div>
-            <div class="blog">
-                <h3 class="category">blog</h3>
-                <h3 class="title">Be First Who Read News</h3>
-                <p class="desc">Explore the latest stories about our dishes, offers,
-                    events and future plans here.</p>
-                <div class="blog-wrapper">
-                    <div class="blog-list">
-
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="reservation">
-                <h3 class="category">reservation</h3>
-            </div> -->
-        </div>
-        <!-- End Content -->
-        <div class="parallax"></div>
         <div id="footer">
             <div class="footer-top">
                 <div class="tagname">#TheTastEat</div>
                 <div class="logo">
-                    <img src="./images/logo-brand.svg" alt="" />
+                    <img src="../images/logo-brand.svg" alt="" />
                 </div>
                 <ul class="social-media">
                     <li class="social__item">
@@ -214,9 +131,7 @@
                 </ul>
             </div>
         </div>
-        <!-- End footer -->
     </div>
-    <script src="./main.js"></script>
     <script>
         const header = document.querySelector(".header__menu");
         const navIcon = document.querySelector(".nav-icon");
