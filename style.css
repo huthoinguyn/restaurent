@@ -1,25 +1,40 @@
 #slider {
   width: 100%;
   padding-top: 40px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: var(--primary);
+  -webkit-transition: all 150ms linear;
   transition: all 150ms linear;
 }
+
 #slider .container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 50px;
 }
+
 #slider .container .content {
   width: 50%;
   color: var(--white);
   text-align: left;
 }
+
 #slider .container .content h2 {
   font-family: "Cormorant Infant", serif;
   font-size: 10rem;
@@ -27,6 +42,7 @@
   font-weight: 700;
   line-height: 110px;
 }
+
 #slider .container .content p {
   font-size: 2rem;
   margin: 0 0 10px;
@@ -34,6 +50,7 @@
   font-weight: 400;
   line-height: 30px;
 }
+
 #slider .container .content button {
   padding: 18px 55px;
   font-size: 2.2rem;
@@ -42,13 +59,16 @@
   color: var(--secondary);
   cursor: pointer;
 }
+
 #slider .container .content button:hover {
   background-color: var(--secondary);
   color: var(--primary);
 }
+
 #slider .container .image {
   width: 50%;
 }
+
 #slider .container .image-wrapper {
   background-color: #3f434a;
   padding: 30px 30px 0 30px;
@@ -58,10 +78,12 @@
   width: 100%;
   height: 100%;
 }
+
 #slider .container .image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
@@ -69,17 +91,18 @@
 #content .menu,
 #content .testimonial,
 #content .offers,
-#content .menu2,
+#content .popular-dishes,
 #content .whatweoffer,
 #content .blog,
 #content .reservation {
   min-height: 100vh;
   padding: 24px;
 }
+
 #content .menu .title,
 #content .testimonial .title,
 #content .offers .title,
-#content .menu2 .title,
+#content .popular-dishes .title,
 #content .whatweoffer .title,
 #content .blog .title,
 #content .reservation .title {
@@ -89,10 +112,11 @@
   margin: 10px 0 8px;
   font-family: "Cormorant Infant", serif;
 }
+
 #content .menu .desc,
 #content .testimonial .desc,
 #content .offers .desc,
-#content .menu2 .desc,
+#content .popular-dishes .desc,
 #content .whatweoffer .desc,
 #content .blog .desc,
 #content .reservation .desc {
@@ -101,8 +125,13 @@
   font-weight: 400;
   margin-bottom: 10px;
 }
+
 #content .menu .category {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   padding: 4px 0;
   text-transform: uppercase;
@@ -114,12 +143,18 @@
   border-top: 1px solid var(--secondary);
   border-bottom: 1px solid var(--secondary);
 }
+
 #content .testimonial {
   background-color: var(--primary);
 }
+
 #content .testimonial .category {
   margin: 9px 0 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   padding: 4px 0;
   text-transform: uppercase;
@@ -131,8 +166,13 @@
   border-top: 1px solid var(--secondary);
   border-bottom: 1px solid var(--secondary);
 }
+
 #content .offers .category {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   padding: 4px 0;
   text-transform: uppercase;
@@ -144,13 +184,27 @@
   border-top: 1px solid var(--secondary);
   border-bottom: 1px solid var(--secondary);
 }
-#content .menu2 {
+
+#content .popular-dishes {
+  padding: 60px 0 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-#content .menu2 .category {
+
+#content .popular-dishes .category {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   padding: 4px 0;
   text-transform: uppercase;
@@ -162,54 +216,73 @@
   border-top: 1px solid var(--secondary);
   border-bottom: 1px solid var(--secondary);
 }
-#content .menu2 .desc {
+
+#content .popular-dishes .desc {
   max-width: 800px;
   color: #555;
   text-align: center;
 }
-#content .menu2 .menu-wrapper {
-  margin: 30px 0 20px;
+
+#content .popular-dishes .menu-wrapper {
   width: 100%;
   max-width: 1400px;
 }
-#content .menu2 .menu-wrapper .menu__list {
+
+#content .popular-dishes .menu-wrapper .menu__list {
+  margin: 30px 0 20px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-#content .menu2 .menu-wrapper .menu__list .item {
+
+#content .popular-dishes .menu-wrapper .menu__list .item {
   width: 25%;
 }
-#content .menu2 .menu-wrapper .menu__list .item .image {
+
+#content .popular-dishes .menu-wrapper .menu__list .item .image {
   width: 100%;
   overflow: hidden;
 }
-#content .menu2 .menu-wrapper .menu__list .item .image img {
+
+#content .popular-dishes .menu-wrapper .menu__list .item .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-#content .menu2 .menu-wrapper .menu__list .item .info {
+
+#content .popular-dishes .menu-wrapper .menu__list .item .info {
   width: 100%;
   border-bottom: 1px solid var(--border);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 10px;
 }
-#content .menu2 .menu-wrapper .menu__list .item .info .name,
-#content .menu2 .menu-wrapper .menu__list .item .info .price {
+
+#content .popular-dishes .menu-wrapper .menu__list .item .info .name,
+#content .popular-dishes .menu-wrapper .menu__list .item .info .price {
   font-family: "Cormorant Infant", serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 42px;
   margin: 10px 0;
 }
-#content .menu2 .menu-wrapper .menu__list .item .desc {
+
+#content .popular-dishes .menu-wrapper .menu__list .item .desc {
   text-align: left;
   margin-bottom: 10px;
 }
-#content .menu2 button {
+
+#content .popular-dishes button {
   padding: 18px 55px;
   font-size: 2.2rem;
   background-color: var(--white);
@@ -217,23 +290,38 @@
   color: var(--secondary);
   cursor: pointer;
 }
-#content .menu2 button:hover {
+
+#content .popular-dishes button:hover {
   background-color: var(--secondary);
   color: var(--primary);
 }
+
 #content .whatweoffer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
   background-color: var(--primary);
 }
+
 #content .whatweoffer .content {
-  flex-basis: 2/5;
+  -ms-flex-preferred-size: 2/5;
+      flex-basis: 2/5;
   color: var(--white);
 }
+
 #content .whatweoffer .content .category {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   padding: 4px 0;
   text-transform: uppercase;
@@ -245,19 +333,24 @@
   border-top: 1px solid var(--secondary);
   border-bottom: 1px solid var(--secondary);
 }
+
 #content .whatweoffer .content .desc {
   max-width: 480px;
 }
+
 #content .whatweoffer .service-item-wrap {
-  flex-basis: 1/5;
+  -ms-flex-preferred-size: 1/5;
+      flex-basis: 1/5;
   padding: 45px 30px 30px;
   border: 20px solid #323841;
   text-align: center;
 }
+
 #content .whatweoffer .service-item-wrap img {
   width: 60px;
   height: 60px;
 }
+
 #content .whatweoffer .service-item-wrap .text {
   min-width: 144px;
   font-size: 2.5rem;
@@ -267,8 +360,13 @@
   color: var(--white);
   font-family: "Cormorant Infant", serif;
 }
+
 #content .blog .category {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   padding: 4px 0;
   text-transform: uppercase;
@@ -280,8 +378,13 @@
   border-top: 1px solid var(--secondary);
   border-bottom: 1px solid var(--secondary);
 }
+
 #content .reservation .category {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   padding: 4px 0;
   text-transform: uppercase;
@@ -305,12 +408,16 @@
 
 @media screen and (min-width: 991px) and (max-width: 1180px) {
   #content .whatweoffer {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
     padding: 100px 0;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #content .whatweoffer .content {
-    flex-basis: 1;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
     width: 90%;
     text-align: left;
   }
@@ -321,24 +428,33 @@
     max-width: 600px;
   }
   #content .whatweoffer .service-item-wrap {
-    flex-basis: 1/3;
+    -ms-flex-preferred-size: 1/3;
+        flex-basis: 1/3;
     width: 30%;
   }
-  #content .menu2 .menu-wrapper .menu__list {
-    justify-content: center;
-    flex-wrap: wrap;
+  #content .popular-dishes .menu-wrapper .menu__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  #content .menu2 .menu-wrapper .menu__list .item {
+  #content .popular-dishes .menu-wrapper .menu__list .item {
     width: 45%;
-    flex-basis: 1/2;
+    -ms-flex-preferred-size: 1/2;
+        flex-basis: 1/2;
   }
 }
+
 @media screen and (min-width: 769px) and (max-width: 990px) {
   #slider .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #slider .container .content,
-#slider .container .image {
+  #slider .container .image {
     width: 100%;
     padding: 0 24px;
   }
@@ -349,22 +465,29 @@
     font-size: 8rem;
     line-height: 1.2;
   }
-
-  #content .menu2 .menu-wrapper .menu__list {
-    justify-content: center;
-    flex-wrap: wrap;
+  #content .popular-dishes .menu-wrapper .menu__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  #content .menu2 .menu-wrapper .menu__list .item {
+  #content .popular-dishes .menu-wrapper .menu__list .item {
     width: 45%;
-    flex-basis: 1/2;
+    -ms-flex-preferred-size: 1/2;
+        flex-basis: 1/2;
   }
   #content .whatweoffer {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
     padding: 100px 0;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #content .whatweoffer .content {
-    flex-basis: 1;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
     width: 90%;
     text-align: left;
   }
@@ -375,16 +498,21 @@
     max-width: 600px;
   }
   #content .whatweoffer .service-item-wrap {
-    flex-basis: 1/3;
+    -ms-flex-preferred-size: 1/3;
+        flex-basis: 1/3;
     width: 30%;
   }
 }
+
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
   #slider .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #slider .container .content,
-#slider .container .image {
+  #slider .container .image {
     width: 100%;
     padding: 0 24px;
   }
@@ -395,36 +523,48 @@
     font-size: 7rem;
     line-height: 1.2;
   }
-
-  #content .menu2 .menu-wrapper .menu__list {
-    justify-content: center;
-    flex-wrap: wrap;
+  #content .popular-dishes .menu-wrapper .menu__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  #content .menu2 .menu-wrapper .menu__list .item {
+  #content .popular-dishes .menu-wrapper .menu__list .item {
     width: 90%;
-    flex-basis: 1;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
   }
   #content .whatweoffer {
     padding: 100px 0;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #content .whatweoffer .content {
-    flex-basis: 1;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
     width: 90%;
     text-align: left;
   }
   #content .whatweoffer .service-item-wrap {
-    flex-basis: 1;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
     width: 90%;
   }
 }
+
 @media only screen and (max-device-width: 480px) {
   #slider .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #slider .container .content,
-#slider .container .image {
+  #slider .container .image {
     width: 100%;
     padding: 0 24px;
   }
@@ -435,29 +575,36 @@
     font-size: 5rem;
     line-height: 1.2;
   }
-
-  #content .menu2 .menu-wrapper .menu__list {
-    justify-content: center;
-    flex-wrap: wrap;
+  #content .popular-dishes .menu-wrapper .menu__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  #content .menu2 .menu-wrapper .menu__list .item {
+  #content .popular-dishes .menu-wrapper .menu__list .item {
     width: 95%;
-    flex-basis: 1;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
   }
   #content .whatweoffer {
     padding: 100px 0;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #content .whatweoffer .content {
-    flex-basis: 1;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
     width: 95%;
     text-align: left;
   }
   #content .whatweoffer .service-item-wrap {
-    flex-basis: 1;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
     width: 95%;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

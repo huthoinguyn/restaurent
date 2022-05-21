@@ -96,7 +96,7 @@
   .menu,
   .testimonial,
   .offers,
-  .menu2,
+  .popular-dishes,
   .whatweoffer,
   .blog,
   .reservation {
@@ -133,7 +133,8 @@
       @include ctcategory;
     }
   }
-  .menu2 {
+  .popular-dishes {
+    padding: 60px 0 140px;
     display: flex;
     // justify-content: center;
     align-items: center;
@@ -147,10 +148,10 @@
       text-align: center;
     }
     .menu-wrapper {
-      margin: 30px 0 20px;
       width: 100%;
       max-width: 1400px;
       .menu__list {
+        margin: 30px 0 20px;
         width: 100%;
         display: flex;
         gap: 30px;
@@ -271,7 +272,7 @@
         width: 30%;
       }
     }
-    .menu2 {
+    .popular-dishes {
       .menu-wrapper {
         .menu__list {
           justify-content: center;
@@ -307,7 +308,7 @@
   #content {
     .whatweoffer {
     }
-    .menu2 {
+    .popular-dishes {
       .menu-wrapper {
         .menu__list {
           justify-content: center;
@@ -363,7 +364,7 @@
   #content {
     .whatweoffer {
     }
-    .menu2 {
+    .popular-dishes {
       .menu-wrapper {
         .menu__list {
           justify-content: center;
@@ -413,7 +414,7 @@
   #content {
     .whatweoffer {
     }
-    .menu2 {
+    .popular-dishes {
       .menu-wrapper {
         .menu__list {
           justify-content: center;
