@@ -19,7 +19,8 @@ html {
 }
 
 body {
-  background-color: var(--primary);
+  background-color: var(--white);
+  color: var(--primary);
 }
 
 .social-media {
