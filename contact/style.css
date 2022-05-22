@@ -308,7 +308,8 @@
   #content .contact-info-item a {
     padding: unset;
   }
-  #content .contact-form form input {
+  #content .contact-form form textarea,
+#content .contact-form form input {
     flex-basis: 1;
     width: 95%;
   }
@@ -345,7 +346,8 @@
   #content .contact-info-item a {
     padding: unset;
   }
-  #content .contact-form form input {
+  #content .contact-form form textarea,
+#content .contact-form form input {
     flex-basis: 1;
     width: 95%;
   }
