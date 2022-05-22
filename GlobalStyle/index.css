@@ -270,7 +270,7 @@ body {
           align-items: flex-end;
 }
 
-#footer .footer-container .subcribe p {
+#footer .footer-container .subcribe .title {
   color: var(--white);
   font-size: 2rem;
   margin: 0 0 25px;
