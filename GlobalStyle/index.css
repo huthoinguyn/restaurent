@@ -44,6 +44,23 @@ body {
   cursor: pointer;
 }
 
+.title {
+  font-size: 4rem;
+  line-height: 56px;
+  font-weight: 700;
+  margin: 10px 0 8px;
+  padding: 0 0 10px;
+  font-family: "Cormorant Infant", serif;
+}
+
+.desc {
+  font-size: 2rem;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
 #header {
   background-color: var(--primary);
 }

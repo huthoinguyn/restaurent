@@ -88,14 +88,6 @@
   border-top-right-radius: 50%;
 }
 
-.desc {
-  font-size: 2rem;
-  line-height: 30px;
-  font-weight: 400;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-}
-
 #content .menu,
 #content .testimonial,
 #content .offers,

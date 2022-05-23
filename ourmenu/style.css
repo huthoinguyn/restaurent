@@ -1,0 +1,169 @@
+.category {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 4px 0;
+  margin: 9px 0 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 21px;
+  color: var(--primary);
+  border-top: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+  margin: unset;
+}
+
+#slider {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  background-color: var(--primary);
+  padding: 85px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#slider .slider-wrapper {
+  padding: 0 40px;
+}
+
+#slider .slider-wrapper .title {
+  color: var(--white);
+  font-size: 6rem;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--secondary);
+  border-top: 1px solid var(--secondary);
+}
+
+#content .starters-section,
+#content .maindish-section,
+#content .dessert-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 130px 0 140px;
+  display: -ms-grid;
+  display: grid;
+  gap: 45px;
+  -ms-grid-columns: 0.8fr 1fr;
+      grid-template-columns: 0.8fr 1fr;
+}
+
+#content .starters-section .menu-wrap .menu-list .menu-item,
+#content .maindish-section .menu-wrap .menu-list .menu-item,
+#content .dessert-section .menu-wrap .menu-list .menu-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  -ms-grid-row: auto;
+      grid-row-start: auto;
+}
+
+#content .starters-section .menu-wrap .menu-list .menu-item .menu-info,
+#content .maindish-section .menu-wrap .menu-list .menu-item .menu-info,
+#content .dessert-section .menu-wrap .menu-list .menu-item .menu-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.5;
+}
+
+#content .starters-section .menu-wrap .menu-list .menu-item .menu-info img,
+#content .maindish-section .menu-wrap .menu-list .menu-item .menu-info img,
+#content .dessert-section .menu-wrap .menu-list .menu-item .menu-info img {
+  width: 84px;
+  height: 84px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+#content .starters-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail,
+#content .maindish-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail,
+#content .dessert-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail {
+  margin-left: 20px;
+}
+
+#content .starters-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .title,
+#content .maindish-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .title,
+#content .dessert-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .title {
+  font-size: 3rem;
+  line-height: 1.4;
+}
+
+#content .starters-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .desc,
+#content .maindish-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .desc,
+#content .dessert-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .desc {
+  color: #555;
+  line-height: 1.5;
+}
+
+#content .starters-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .title,
+#content .starters-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .desc,
+#content .maindish-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .title,
+#content .maindish-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .desc,
+#content .dessert-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .title,
+#content .dessert-section .menu-wrap .menu-list .menu-item .menu-info .menu-detail .desc {
+  padding: unset;
+  margin: unset;
+}
+
+#content .starters-section .menu-wrap .menu-list .menu-item .menu-dot-line,
+#content .maindish-section .menu-wrap .menu-list .menu-item .menu-dot-line,
+#content .dessert-section .menu-wrap .menu-list .menu-item .menu-dot-line {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 10px;
+  height: 50px;
+  border-bottom: 2px dashed var(--border);
+}
+
+#content .starters-section .menu-wrap .menu-list .menu-item .menu-price.title,
+#content .maindish-section .menu-wrap .menu-list .menu-item .menu-price.title,
+#content .dessert-section .menu-wrap .menu-list .menu-item .menu-price.title {
+  font-size: 3rem;
+  padding: unset;
+  margin: 15px 0 0;
+}
+
+#content .starters-section .menu-wrap button,
+#content .maindish-section .menu-wrap button,
+#content .dessert-section .menu-wrap button {
+  padding: 18px 55px;
+  font-size: 2.2rem;
+  background-color: var(--white);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  cursor: pointer;
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+
+#content .starters-section .menu-wrap button:hover,
+#content .maindish-section .menu-wrap button:hover,
+#content .dessert-section .menu-wrap button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+/*# sourceMappingURL=style.css.map */
