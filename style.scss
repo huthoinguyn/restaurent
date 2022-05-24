@@ -101,13 +101,6 @@
   .reservation {
     min-height: 100vh;
     padding: 24px;
-    .title {
-      font-size: 4rem;
-      line-height: 56px;
-      font-weight: 700;
-      margin: 10px 0 8px;
-      font-family: "Cormorant Infant", serif;
-    }
   }
   .menu {
     .category {
@@ -231,9 +224,6 @@
     text-align: center;
     .desc {
       max-width: 480px;
-    }
-    .category {
-      @include ctcategory;
     }
     .blog-wrapper {
       width: 100%;

@@ -99,20 +99,6 @@
   padding: 24px;
 }
 
-#content .menu .title,
-#content .testimonial .title,
-#content .offers .title,
-#content .popular-dishes .title,
-#content .whatweoffer .title,
-#content .blog .title,
-#content .reservation .title {
-  font-size: 4rem;
-  line-height: 56px;
-  font-weight: 700;
-  margin: 10px 0 8px;
-  font-family: "Cormorant Infant", serif;
-}
-
 #content .menu .category {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -368,24 +354,6 @@
 
 #content .blog .desc {
   max-width: 480px;
-}
-
-#content .blog .category {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  padding: 4px 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 21px;
-  color: var(--primary);
-  border-top: 1px solid var(--secondary);
-  border-bottom: 1px solid var(--secondary);
 }
 
 #content .blog .blog-wrapper {

@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
+@mixin ctcategory($color: var(--primary)) {
+  width: fit-content;
+  height: min-content;
+  padding: 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 21px;
+  color: $color;
+  border-top: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +29,13 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--white);
   color: var(--primary);
+  overflow-y: scroll;
 }
 
 .social-media {
@@ -53,6 +69,10 @@ body {
   font-weight: 400;
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+
+.category {
+  @include ctcategory;
 }
 
 #header {

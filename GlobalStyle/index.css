@@ -16,11 +16,13 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--white);
   color: var(--primary);
+  overflow-y: scroll;
 }
 
 .social-media {
@@ -59,6 +61,24 @@ body {
   font-weight: 400;
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+
+.category {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 21px;
+  color: var(--primary);
+  border-top: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--secondary);
 }
 
 #header {
