@@ -18,11 +18,11 @@
   border-top: 1px solid var(--secondary);
 }
 
-#content .about {
+content .about {
   padding: 140px 0 180px;
   overflow: hidden;
 }
-#content .about-section {
+content .about-section {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -31,7 +31,7 @@
   gap: 60px;
   position: relative;
 }
-#content .about-author {
+content .about-author {
   width: 480px;
   padding: 35px 60px 30px;
   border-radius: 4px;
@@ -42,34 +42,34 @@
   bottom: -10%;
   transform: translateX(-50%);
 }
-#content .about-author .info {
+content .about-author .info {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-#content .about-author .info .avatar {
+content .about-author .info .avatar {
   overflow: hidden;
   border-radius: 50%;
   width: 72px;
   height: 72px;
 }
-#content .about-author .info .avatar img {
+content .about-author .info .avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#content .about-author .info .intro {
+content .about-author .info .intro {
   margin-left: 25px;
 }
-#content .about-author .info .intro .title,
-#content .about-author .info .intro .desc {
+content .about-author .info .intro .title,
+content .about-author .info .intro .desc {
   padding: unset;
   margin: unset;
 }
-#content .about-author .info .intro .title {
+content .about-author .info .intro .title {
   font-size: 3rem;
 }
-#content .about-content .category {
+content .about-content .category {
   width: fit-content;
   height: min-content;
   padding: 4px 0;
@@ -82,15 +82,15 @@
   border-top: 1px solid var(--secondary);
   border-bottom: 1px solid var(--secondary);
 }
-#content .about-us-sign {
+content .about-us-sign {
   margin: 15px 0 50px;
 }
-#content .about-us-sign .desc {
+content .about-us-sign .desc {
   line-height: 1.5;
   color: #555;
   text-transform: uppercase;
 }
-#content .about button {
+content .about button {
   padding: 18px 55px;
   font-size: 2.2rem;
   background-color: var(--white);
@@ -98,45 +98,45 @@
   color: var(--secondary);
   cursor: pointer;
 }
-#content .about button:hover {
+content .about button:hover {
   background-color: var(--secondary);
   color: var(--primary);
 }
-#content .about-img {
+content .about-img {
   position: relative;
 }
-#content .about-img .gold-pattern {
+content .about-img .gold-pattern {
   width: 40%;
   z-index: -2;
   position: absolute;
   right: 0;
   animation: rotate 6s infinite linear;
 }
-#content .about-img .image {
+content .about-img .image {
   width: 85%;
   border-top-right-radius: 40%;
   overflow: hidden;
 }
-#content .about-img .image img {
+content .about-img .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#content .feature {
+content .feature {
   height: fit-content;
   padding: 100px 0;
   background-image: url("../images/feature-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-#content .feature-section {
+content .feature-section {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-#content .feature-item {
+content .feature-item {
   flex-basis: 1/4;
   padding: 40px 16px;
   color: var(--white);
@@ -145,28 +145,28 @@
   justify-content: center;
   flex-direction: column;
 }
-#content .feature-item:not(:last-child) {
+content .feature-item:not(:last-child) {
   border-right: 0.5px solid var(--border);
 }
-#content .feature-item .img {
+content .feature-item .img {
   width: 88px;
   height: 88px;
 }
-#content .feature-item .img img {
+content .feature-item .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#content .feature-item .title {
+content .feature-item .title {
   font-size: 3rem;
   margin: 25px 0 10px;
   padding: unset;
 }
-#content .feature-item .desc {
+content .feature-item .desc {
   text-align: center;
   padding: unset;
 }
-#content .feature-item a {
+content .feature-item a {
   font-size: 2rem;
   line-height: 30px;
   font-weight: 400;
@@ -174,7 +174,7 @@
   color: var(--secondary);
   padding: unset;
 }
-#content .feature-item a:hover {
+content .feature-item a:hover {
   opacity: 0.8;
 }
 
@@ -184,88 +184,86 @@
   }
 }
 @media screen and (min-width: 991px) and (max-width: 1180px) {
-  #content .about-section {
+  content .about-section {
     padding: 16px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 990px) {
-  #content .feature-section {
+  content .feature-section {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  #content .feature-item {
+  content .feature-item {
     width: 45%;
     flex-basis: 1/2;
   }
-  #content .feature-item:not(:last-child) {
+  content .feature-item:not(:last-child) {
     border-right: unset;
   }
-  #content .about-section {
+  content .about-section {
     padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #content .about-author {
+  content .about-author {
     width: 98%;
     padding: 35px 20px 30px;
     bottom: -10%;
     border-radius: unset;
   }
-  #content .about-img {
+  content .about-img {
     width: 100%;
   }
-  #content .about-img .image {
+  content .about-img .image {
     width: 100%;
   }
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
-  #content .feature-section {
+  content .feature-section {
     flex-direction: column;
     justify-content: center;
   }
-  #content .about-section {
+  content .about-section {
     padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #content .about-author {
+  content .about-author {
     width: 97%;
     padding: 35px 20px 30px;
     bottom: -10%;
     border-radius: unset;
   }
-  #content .about-img {
+  content .about-img {
     width: 100%;
   }
-  #content .about-img .image {
+  content .about-img .image {
     width: 100%;
   }
 }
 @media only screen and (max-device-width: 480px) {
-  #content .about-section {
+  content .about-section {
     padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #content .about-author {
+  content .about-author {
     width: 95%;
     padding: 35px 20px 30px;
     bottom: -10%;
     border-radius: unset;
   }
-  #content .about-img {
+  content .about-img {
     width: 100%;
   }
-  #content .about-img .image {
+  content .about-img .image {
     width: 100%;
   }
-  #content .feature-section {
+  content .feature-section {
     flex-direction: column;
     justify-content: center;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

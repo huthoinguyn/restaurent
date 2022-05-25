@@ -20,7 +20,7 @@
 
 #slider {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   background-color: var(--primary);
   padding: 85px 0;
@@ -28,11 +28,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #slider .slider-wrapper {
@@ -47,96 +47,97 @@
   border-top: 1px solid var(--secondary);
 }
 
-#content {
+content {
   min-height: 100vh;
   background-color: var(--white);
 }
 
-#content .contact-wrapper,
-#content .branches-wrapper {
+content .contact-wrapper,
+content .branches-wrapper {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-#content .contact {
+content .contact {
   padding: 140px 0 80px;
 }
 
-#content .contact-wrapper {
+content .contact-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-grid-columns: 0.75fr 1fr;
-      grid-template-columns: 0.75fr 1fr;
+  grid-template-columns: 0.75fr 1fr;
   gap: 40px;
   padding: 0 24px;
 }
 
-#content .contact-info {
+content .contact-info {
   padding: 40px 65px 75px;
   background-color: #fff8f5;
 }
 
-#content .contact-info .title {
+content .contact-info .title {
   margin: 15px 0 10px;
 }
 
-#content .contact-info-item {
+content .contact-info-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 28px;
 }
 
-#content .contact-info-item a {
+content .contact-info-item a {
   text-decoration: none;
   padding-left: 20px;
   margin: 10px 0;
   color: var(--primary);
 }
 
-#content .contact-info-item a:hover {
+content .contact-info-item a:hover {
   color: var(--secondary);
 }
 
-#content .contact-social-wrap-list {
+content .contact-social-wrap-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
-#content .contact-social-wrap, #content .contact-icon-wrap {
+content .contact-social-wrap,
+content .contact-icon-wrap {
   width: 55px;
   height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 55px;
 }
 
-#content .contact-icon-wrap {
+content .contact-icon-wrap {
   background-color: var(--primary);
 }
 
-#content .contact-icon-wrap i {
+content .contact-icon-wrap i {
   color: var(--white);
   font-size: 2.8rem;
 }
 
-#content .contact-social-wrap {
+content .contact-social-wrap {
   padding-top: 10px;
   background-color: #292e361a;
   text-decoration: none;
@@ -145,95 +146,95 @@
   padding: unset;
 }
 
-#content .contact-social-wrap:hover {
+content .contact-social-wrap:hover {
   background-color: var(--secondary);
 }
 
-#content .contact-social-wrap i {
+content .contact-social-wrap i {
   font-size: 1.8rem;
 }
 
-#content .contact-form {
+content .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-#content .contact-form form {
+content .contact-form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-#content .contact-form form input,
-#content .contact-form form textarea {
+content .contact-form form input,
+content .contact-form form textarea {
   padding: 8px 12px 8px 20px;
   font-size: 2.2rem;
   outline: none;
   border: 0.5px solid var(--border);
 }
 
-#content .contact-form form input:focus,
-#content .contact-form form textarea:focus {
+content .contact-form form input:focus,
+content .contact-form form textarea:focus {
   border-color: #3898ec;
 }
 
-#content .contact-form form input::-webkit-input-placeholder,
-#content .contact-form form textarea::-webkit-input-placeholder {
+content .contact-form form input::-webkit-input-placeholder,
+content .contact-form form textarea::-webkit-input-placeholder {
   color: var(--primary);
   font-size: 2.2rem;
 }
 
-#content .contact-form form input:-ms-input-placeholder,
-#content .contact-form form textarea:-ms-input-placeholder {
+content .contact-form form input:-ms-input-placeholder,
+content .contact-form form textarea:-ms-input-placeholder {
   color: var(--primary);
   font-size: 2.2rem;
 }
 
-#content .contact-form form input::-ms-input-placeholder,
-#content .contact-form form textarea::-ms-input-placeholder {
+content .contact-form form input::-ms-input-placeholder,
+content .contact-form form textarea::-ms-input-placeholder {
   color: var(--primary);
   font-size: 2.2rem;
 }
 
-#content .contact-form form input::placeholder,
-#content .contact-form form textarea::placeholder {
+content .contact-form form input::placeholder,
+content .contact-form form textarea::placeholder {
   color: var(--primary);
   font-size: 2.2rem;
 }
 
-#content .contact-form form input {
+content .contact-form form input {
   -ms-flex-preferred-size: 1/2;
-      flex-basis: 1/2;
+  flex-basis: 1/2;
   width: 48%;
   margin-bottom: 30px;
   min-height: 70px;
 }
 
-#content .contact-form form textarea {
+content .contact-form form textarea {
   -ms-flex-preferred-size: 1;
-      flex-basis: 1;
+  flex-basis: 1;
   width: 100%;
   min-height: 140px;
   margin-bottom: 10px;
 }
 
-#content .contact-form form button {
+content .contact-form form button {
   padding: 18px 55px;
   font-size: 2.2rem;
   background-color: var(--white);
@@ -245,106 +246,106 @@
   margin-top: 20px;
 }
 
-#content .contact-form form button:hover {
+content .contact-form form button:hover {
   background-color: var(--secondary);
   color: var(--primary);
 }
 
-#content .branches {
+content .branches {
   padding: 80px 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-#content .branches-wrapper {
+content .branches-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-#content .branches-list {
+content .branches-list {
   width: 100%;
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 16px;
 }
 
-#content .branches-item {
+content .branches-item {
   width: 48%;
   -ms-flex-preferred-size: 1/2;
-      flex-basis: 1/2;
+  flex-basis: 1/2;
   border: 1px solid var(--border);
   gap: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-#content .branches-item .info {
+content .branches-item .info {
   width: 50%;
   -ms-flex-preferred-size: 1/2;
-      flex-basis: 1/2;
+  flex-basis: 1/2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 16px;
 }
 
-#content .branches-item .info .title {
+content .branches-item .info .title {
   font-size: 3rem;
 }
 
-#content .branches-item .info .phone,
-#content .branches-item .info .mail {
+content .branches-item .info .phone,
+content .branches-item .info .mail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 10px 0;
 }
 
-#content .branches-item .info .phone i,
-#content .branches-item .info .mail i {
+content .branches-item .info .phone i,
+content .branches-item .info .mail i {
   color: var(--secondary);
   font-size: 2.8rem;
 }
 
-#content .branches-item .info .phone a,
-#content .branches-item .info .mail a {
+content .branches-item .info .phone a,
+content .branches-item .info .mail a {
   font-size: 1.8rem;
   color: var(--primary);
   text-decoration: none;
@@ -354,176 +355,175 @@
   line-height: 27px;
 }
 
-#content .branches-item .image {
+content .branches-item .image {
   width: 45%;
   -ms-flex-preferred-size: 1/2;
-      flex-basis: 1/2;
+  flex-basis: 1/2;
   overflow: hidden;
 }
 
-#content .branches-item .image img {
+content .branches-item .image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 769px) and (max-width: 990px) {
-  #content .branches-list {
+  content .branches-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 32px;
   }
-  #content .branches-item {
+  content .branches-item {
     width: 95%;
     -ms-flex-preferred-size: 1;
-        flex-basis: 1;
+    flex-basis: 1;
   }
-  #content .branches-item .info {
+  content .branches-item .info {
     width: 100%;
   }
-  #content .branches-item .image {
+  content .branches-item .image {
     width: 100%;
   }
-  #content .contact-info {
+  content .contact-info {
     padding: 10px 10px 15px;
   }
-  #content .contact-form form textarea,
-  #content .contact-form form input {
+  content .contact-form form textarea,
+  content .contact-form form input {
     -ms-flex-preferred-size: 1;
-        flex-basis: 1;
+    flex-basis: 1;
     width: 90%;
     margin-bottom: 16px;
   }
-  #content .contact-form form button {
+  content .contact-form form button {
     margin-top: 0;
   }
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
-  #content .branches-list {
+  content .branches-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 32px;
   }
-  #content .branches-item {
+  content .branches-item {
     width: 95%;
     -ms-flex-preferred-size: 1;
-        flex-basis: 1;
+    flex-basis: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
-  #content .branches-item .info {
+  content .branches-item .info {
     width: 100%;
   }
-  #content .branches-item .image {
+  content .branches-item .image {
     width: 100%;
   }
-  #content .contact-wrapper {
+  content .contact-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
-  #content .contact-info {
+  content .contact-info {
     padding: 40px 40px 50px;
   }
-  #content .contact-info-item {
+  content .contact-info-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
-  #content .contact-info-item a {
+  content .contact-info-item a {
     padding: unset;
   }
-  #content .contact-form form textarea,
-  #content .contact-form form input {
+  content .contact-form form textarea,
+  content .contact-form form input {
     -ms-flex-preferred-size: 1;
-        flex-basis: 1;
+    flex-basis: 1;
     width: 95%;
   }
 }
 
 @media only screen and (max-device-width: 480px) {
-  #content .branches-list {
+  content .branches-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 32px;
   }
-  #content .branches-item {
+  content .branches-item {
     width: 95%;
     -ms-flex-preferred-size: 1;
-        flex-basis: 1;
+    flex-basis: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
-  #content .branches-item .info {
+  content .branches-item .info {
     width: 100%;
   }
-  #content .branches-item .image {
+  content .branches-item .image {
     width: 100%;
   }
-  #content .contact-wrapper {
+  content .contact-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
-  #content .contact-info {
+  content .contact-info {
     padding: 40px 40px 50px;
   }
-  #content .contact-info-item {
+  content .contact-info-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
-  #content .contact-info-item a {
+  content .contact-info-item a {
     padding: unset;
   }
-  #content .contact-form form textarea,
-  #content .contact-form form input {
+  content .contact-form form textarea,
+  content .contact-form form input {
     -ms-flex-preferred-size: 1;
-        flex-basis: 1;
+    flex-basis: 1;
     width: 95%;
   }
 }
-/*# sourceMappingURL=style.css.map */

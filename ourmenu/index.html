@@ -15,7 +15,7 @@
 
 <body>
     <div id="root">
-        <div id="header">
+        <header>
             <div class="banner">
                 <div class="phone">Call - 123 456 789</div>
                 <div class="logo">
@@ -64,14 +64,16 @@
                     </ul>
                 </nav>
             </div>
-        </div>
+        </header>
+        <!-- End header -->
         <div id="slider">
             <div class="slider-wrapper">
                 <h1 class="title">Our Menu</h1>
             </div>
         </div>
-        <div id="content">
-            <div class="starters">
+        <!-- End slider -->
+        <content>
+            <section class="starters">
                 <div class="starters-section">
                     <div class="image">
                         <img src="../images/menu-image-1.jpg" alt="">
@@ -143,10 +145,10 @@
                         <button>Order Now</button>
                     </div>
                 </div>
-            </div>
+            </section>
             <div class="parallax item-1">
             </div>
-            <div class="maindish">
+            <section class="maindish">
                 <div class="maindish-section">
                     <div class="menu-wrap">
                         <h3 class="title">Main Dish</h3>
@@ -218,9 +220,9 @@
                         <img src="../images/menu-image-2.jpg" alt="">
                     </div>
                 </div>
-            </div>
+            </section>
             <div class="parallax item-2"></div>
-            <div class="dessert">
+            <section class="dessert">
                 <div class="dessert-section">
                     <div class="image">
                         <img src="../images/menu-image-3.jpg" alt="">
@@ -292,9 +294,10 @@
                         <button>Order Now</button>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="footer">
+            </section>
+        </content>
+        <!-- End content -->
+        <footer>
             <div class="footer-top">
                 <div class="tagname">#TheTastEat</div>
                 <div class="logo">
@@ -359,30 +362,10 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </footer>
+        <!-- End footer -->
     </div>
-    <script>
-        const header = document.querySelector(".header__menu");
-        const navIcon = document.querySelector(".nav-icon");
-        const menu = document.querySelector("#header .header__menu .menu");
-        navIcon.addEventListener("click", function (event) {
-            menu.classList.toggle("active-menu");
-        });
-        const sticky = header.offsetTop;
-        window.onscroll = () => {
-            if (window.scrollY > sticky) {
-                header.classList.add("sticky");
-                header.querySelector("nav").style.height = "40px";
-                document.body.style.paddingTop = "80px";
-                menu.style.top = "40px";
-            } else {
-                header.classList.remove("sticky");
-                header.querySelector("nav").style.height = "80px";
-                document.body.style.paddingTop = 0;
-                menu.style.top = "80px";
-            }
-        };
-    </script>
+    <script src="../GlobalStyle/headerSticky.js"></script>
 </body>
 
 </html>

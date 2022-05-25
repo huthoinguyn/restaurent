@@ -15,7 +15,7 @@
 
 <body>
     <div id="root">
-        <div id="header">
+        <header>
             <div class="banner">
                 <div class="phone">Call - 123 456 789</div>
                 <div class="logo">
@@ -64,7 +64,7 @@
                     </ul>
                 </nav>
             </div>
-        </div>
+        </header>
         <div id="slider">
             <div class="slider-wrapper">
                 <h1 class="title">
@@ -72,8 +72,8 @@
                 </h1>
             </div>
         </div>
-        <div id="content">
-            <div class="about">
+        <content>
+            <section class="about">
                 <div class="about-section">
                     <div class="about-content">
                         <h3 class="category">
@@ -121,8 +121,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="feature">
+            </section>
+            <section class="feature">
                 <div class="feature-section">
                     <div class="feature-item">
                         <div class="img">
@@ -161,10 +161,10 @@
                         <a href="" class="more">See more</a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-        </div>
-        <div id="footer">
+        </content>
+        <footer>
             <div class="footer-top">
                 <div class="tagname">#TheTastEat</div>
                 <div class="logo">
@@ -229,30 +229,9 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </footer>
     </div>
-    <script>
-        const header = document.querySelector(".header__menu");
-        const navIcon = document.querySelector(".nav-icon");
-        const menu = document.querySelector("#header .header__menu .menu");
-        navIcon.addEventListener("click", function (event) {
-            menu.classList.toggle("active-menu");
-        });
-        const sticky = header.offsetTop;
-        window.onscroll = () => {
-            if (window.scrollY > sticky) {
-                header.classList.add("sticky");
-                header.querySelector("nav").style.height = "40px";
-                document.body.style.paddingTop = "80px";
-                menu.style.top = "40px";
-            } else {
-                header.classList.remove("sticky");
-                header.querySelector("nav").style.height = "80px";
-                document.body.style.paddingTop = 0;
-                menu.style.top = "80px";
-            }
-        };
-    </script>
+    <script src="../GlobalStyle/headerSticky.js"></script>
 </body>
 
 </html>

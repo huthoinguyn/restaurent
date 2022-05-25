@@ -18,7 +18,7 @@
 
 #slider {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   background-color: var(--primary);
   padding: 85px 0;
@@ -26,11 +26,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #slider .slider-wrapper {
@@ -45,20 +45,20 @@
   border-top: 1px solid var(--secondary);
 }
 
-#content .blog {
+content .blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-#content .blog-list {
+content .blog-list {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-#content .blog button {
+content .blog button {
   margin-top: 30px;
   padding: 18px 55px;
   font-size: 2.2rem;
@@ -68,8 +68,7 @@
   cursor: pointer;
 }
 
-#content .blog button:hover {
+content .blog button:hover {
   background-color: var(--secondary);
   color: var(--primary);
 }
-/*# sourceMappingURL=style.css.map */

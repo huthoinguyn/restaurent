@@ -55,7 +55,6 @@ window.addEventListener("load", function () {
     },
   ];
   const blogList = document.querySelector(".blog-list");
-  console.log("🚀 ~ file: main.js ~ line 58 ~ blogList", blogList);
   blogItem.map((item) => {
     const blogTemplate = `
   <div class="blog-item">
