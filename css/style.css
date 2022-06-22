@@ -422,6 +422,10 @@ content .blog .blog-wrapper .blog-list .blog-item .blog-content .title {
   font-size: 3rem;
   line-height: 39px;
   margin: 5px 0 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
 }
 
 content .blog .blog-wrapper .blog-list .blog-item .blog-content .desc {
@@ -448,7 +452,7 @@ content .reservation .category {
 
 .parallax {
   height: 600px;
-  background-image: url("./images/parallax.jpg");
+  background-image: url("../images/parallax.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
