@@ -1,7 +1,7 @@
 const header = document.querySelector(".header__menu");
 const navIcon = document.querySelector(".nav-icon");
 const menu = document.querySelector("header .header__menu .menu");
-navIcon.addEventListener("click", function (event) {
+navIcon.addEventListener("click", function () {
   menu.classList.toggle("active-menu");
 });
 const sticky = header.offsetTop;

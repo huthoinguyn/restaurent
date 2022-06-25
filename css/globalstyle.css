@@ -189,6 +189,31 @@ header .header__menu nav .menu__item {
   padding: 20px 30px;
   line-height: 80px;
   cursor: pointer;
+  position: relative;
+}
+
+nav .menu .menu__item > .sub-menu {
+  width: 400px;
+  height: 0;
+  background-color: #333;
+  list-style: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 250ms linear;
+}
+
+nav .menu .menu__item:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
+nav .menu .menu__item > .sub-menu li a {
+  padding: 0 36px;
+  display: block;
 }
 
 header .header__menu nav .menu__item a {
@@ -377,7 +402,7 @@ footer .footer-container .subcribe .action button:hover {
 
 footer .copyright {
   border-top: 1px solid var(--border);
-  padding-top: 24px;
+  padding-top: 4px;
 }
 
 footer .copyright h3,
@@ -502,6 +527,9 @@ footer .copyright ul li a {
     padding: 0 24px;
     width: 100%;
   }
+  nav .menu .menu__item > .sub-menu {
+    display: none;
+  }
   header .header__menu nav .menu__item a {
     display: block;
     width: 100%;
@@ -589,6 +617,9 @@ footer .copyright ul li a {
   header .header__menu nav .menu__item {
     padding: 0 24px;
     width: 100%;
+  }
+  nav .menu .menu__item > .sub-menu {
+    display: none;
   }
   header .header__menu nav .menu__item a {
     display: block;
