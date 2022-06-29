@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,10 @@
   --secondary: #e1b168;
   --white: #fff;
   --border: #858585;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 html {
@@ -192,7 +197,7 @@ header .header__menu nav .menu__item {
   position: relative;
 }
 
-nav .menu .menu__item > .sub-menu {
+nav .menu .menu__item>.sub-menu {
   width: 400px;
   height: 0;
   background-color: #333;
@@ -211,7 +216,7 @@ nav .menu .menu__item:hover .sub-menu {
   height: auto;
 }
 
-nav .menu .menu__item > .sub-menu li a {
+nav .menu .menu__item>.sub-menu li a {
   padding: 0 36px;
   display: block;
 }
@@ -445,47 +450,58 @@ footer .copyright ul li a {
     padding: 18px 12px;
     text-align: center;
   }
+
   header .banner .logo {
     text-align: center;
   }
+
   header .banner .logo img {
     width: 90%;
   }
+
   header .header__menu nav .menu__item {
     padding: 9px 12px;
   }
+
   footer .footer-top {
     padding: 0 28px;
   }
+
   footer .footer-container {
     margin-top: 12px;
   }
+
   footer .footer-container .action {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   footer .footer-container .action button {
     max-width: 95%;
     margin: 0 auto;
   }
+
   footer .footer-container .contact,
   footer .footer-container .timework {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
+
   footer .copyright {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
+
   footer .copyright h3,
   footer .copyright ul {
     font-size: 1.7rem;
   }
+
   footer .copyright h3 {
     text-align: center;
   }
@@ -501,19 +517,24 @@ footer .copyright ul li a {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   header .banner .logo {
     text-align: center;
   }
+
   header .banner .logo img {
     width: 80%;
   }
+
   header .header__menu {
     width: 100%;
   }
+
   header .header__menu nav {
     max-width: 100%;
     position: relative;
   }
+
   header .header__menu nav .menu {
     width: 100%;
     height: 0;
@@ -523,24 +544,30 @@ footer .copyright ul li a {
     padding: 10px 0 20px 10px;
     display: none;
   }
+
   header .header__menu nav .menu__item {
     padding: 0 24px;
     width: 100%;
   }
-  nav .menu .menu__item > .sub-menu {
+
+  nav .menu .menu__item>.sub-menu {
     display: none;
   }
+
   header .header__menu nav .menu__item a {
     display: block;
     width: 100%;
     text-align: left;
   }
+
   header .header__menu nav .nav-icon {
     display: block;
   }
+
   footer {
     padding-top: 80px;
   }
+
   footer .footer-top,
   footer .footer-container {
     -webkit-box-orient: vertical;
@@ -549,34 +576,41 @@ footer .copyright ul li a {
     flex-direction: column;
     gap: 28px;
   }
+
   footer .footer-top .logo {
     text-align: center;
   }
+
   footer .footer-top .logo img {
     width: 95%;
   }
+
   footer .footer-container .action {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   footer .footer-container .action button {
     max-width: 95%;
     margin: 0 auto;
   }
+
   footer .footer-container .contact,
   footer .footer-container .timework {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
+
   footer .copyright {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
+
   footer .copyright h3 {
     text-align: center;
   }
@@ -592,19 +626,24 @@ footer .copyright ul li a {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   header .banner .logo {
     text-align: center;
   }
+
   header .banner .logo img {
     width: 95%;
   }
+
   header .header__menu {
     width: 100%;
   }
+
   header .header__menu nav {
     max-width: 100%;
     position: relative;
   }
+
   header .header__menu nav .menu {
     width: 100%;
     height: 0;
@@ -614,25 +653,31 @@ footer .copyright ul li a {
     padding: 10px 0 20px 10px;
     display: none;
   }
+
   header .header__menu nav .menu__item {
     padding: 0 24px;
     width: 100%;
   }
-  nav .menu .menu__item > .sub-menu {
+
+  nav .menu .menu__item>.sub-menu {
     display: none;
   }
+
   header .header__menu nav .menu__item a {
     display: block;
     width: 100%;
     text-align: left;
   }
+
   header .header__menu nav .nav-icon {
     display: block;
   }
+
   footer {
     padding-top: 70px;
     font-size: 1.7rem;
   }
+
   footer .footer-container,
   footer .footer-top {
     -webkit-box-orient: vertical;
@@ -641,27 +686,33 @@ footer .copyright ul li a {
     flex-direction: column;
     gap: 28px;
   }
+
   footer .footer-container .action {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   footer .footer-container .action button {
     margin: 0 auto;
   }
+
   footer .footer-container .contact,
   footer .footer-container .timework {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
+
   footer .footer-top .logo {
     text-align: center;
   }
+
   footer .footer-top .logo img {
     width: 95%;
   }
+
   footer .copyright {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -669,13 +720,16 @@ footer .copyright ul li a {
     flex-direction: column-reverse;
     gap: 12px;
   }
+
   footer .copyright h3,
   footer .copyright ul {
     font-size: 1.7rem;
   }
+
   footer .copyright h3 {
     text-align: center;
   }
+
   footer .copyright ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
